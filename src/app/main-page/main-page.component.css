@@ -1,0 +1,25 @@
+
+.main{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-main {
+    display: grid;
+    height: 100%;
+    width: 90%;
+    margin-top: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+
+
+div.grid-main div{
+    border: 5px black solid;
+    text-align: center;
+}
+

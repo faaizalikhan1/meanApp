@@ -1,0 +1,65 @@
+
+header{
+    background: #17bebb;
+    height: 100%;
+}
+
+.title{
+    font-family: 'Raleway';
+    color: rgb(24, 24, 24);
+    font-size:2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+nav{
+    font-size: 1em;
+    font-weight: 600;
+    background: #f5efed;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition:all 0.2s ease-in-out;
+}
+
+.leftNav{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav div.leftNav div{
+    text-align: center;
+    width: 30%;
+    padding: 1em;
+}
+
+
+.rightNav{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav div.rightNav div{
+    text-align: center;
+    padding: 1em;
+    width: 35%;
+}
+
+nav div.leftNav div:hover{
+    cursor: pointer;
+    background: #ccc6c5;
+    transition:all 0.2s ease-in-out;
+} 
+
+nav div.rightNav div:hover{
+    cursor: pointer;
+    background: #ccc6c5;
+    transition:all 0.2s ease-in-out;
+} 

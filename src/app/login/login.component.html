@@ -1,0 +1,31 @@
+
+  <div class="form" >
+
+    <form action="#" method="post" [formGroup]="loginForm">
+      <div class="margins">
+  
+          <label for="username">Username:</label>
+          <input type="text"  name="username" formControlName="username" class="form-control" required>    
+      
+
+          <div *ngIf="username.invalid && username.touched">
+            <div *ngIf="username.errors.required" class="error">
+              Username is required
+            </div>
+        </div>
+      </div>
+      
+      <div class="margins">
+      <label for="pwd">Password:</label>
+      <input type="password"  name="pwd" formControlName="pwd" class="form-control" required>
+
+    <div *ngIf="pwd.invalid && pwd.touched">
+      <div *ngIf="pwd.errors.required" class="error">
+          Password is required
+        </div>
+    </div>
+  </div>
+
+      <button class="margins btn" type="submit" [disabled]="! loginForm.valid">Sign up!</button>
+      </form>
+  </div>

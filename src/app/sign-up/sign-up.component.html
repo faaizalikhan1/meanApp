@@ -1,0 +1,62 @@
+
+  <div class="form">
+
+  <form action="#" method="post" [formGroup]="signUpForm">
+    
+    <div class="margins">
+
+        <label for="username">Enter Username:</label>
+        <input type="text" name="username" formControlName="username" class="form-control" [(ngModel)]="uname" required>    
+    
+
+        <div *ngIf="username.invalid && username.touched">
+            <div *ngIf="username.errors.required" class="error">
+              Username is required
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="margins">
+        <label for="email">Enter email:</label>
+        <input type="email" name="email" formControlName="email" class="form-control" [(ngModel)]="uemail" required> 
+        
+        
+        <div *ngIf="email.invalid && email.touched">
+            <div *ngIf="email.errors.required" class="error">
+              Email is required
+            </div>
+        </div>
+
+    </div>
+
+  <div class="margins">
+    <label for="pwd">Enter Password:</label>
+    <input type="password" name="pwd" formControlName="pwd" class="form-control" [(ngModel)]="upwd" required>
+  
+        
+    <div *ngIf="pwd.invalid && pwd.touched">
+        <div *ngIf="pwd.errors.required" class="error">
+          Password is required
+        </div>
+    </div>
+  </div>
+
+    <div class="margins">
+
+    <label for="cnumber">Enter Contact Number:</label>
+    <input type="tel" name="cnumber" formControlName="cnumber" class="form-control" [(ngModel)]="ucontact" required>
+     
+
+    <div *ngIf="cnumber.invalid && cnumber.touched">
+        <div *ngIf="cnumber.errors.required" class="error">
+          Contact Number is required
+        </div>
+    </div>
+   
+    </div>
+    
+
+    <button class="margins btn" type="submit" [disabled]="! signUpForm.valid" (click)="signUp()">Sign up!</button>
+    </form>
+</div>

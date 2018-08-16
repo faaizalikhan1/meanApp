@@ -1,0 +1,39 @@
+<div class="form">
+<form>
+
+      <div class="margins">
+  
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" [(ngModel)]="fname" required>    
+  
+      </div>
+      
+      <div class="margins">
+          <label for="lname">Last name</label>
+          <input type="text" name="lname" [(ngModel)]="lname" required>    
+      </div>
+  
+      <div class="margins">
+      <label for="email">Email</label>
+      <input type="email" name="email" [(ngModel)]="email" required>
+      </div>
+
+      <div class="margins">
+            <label for="contact">Contact</label>
+            <input type="tel" name="contact" [(ngModel)]="contact" required>
+      </div>
+  
+      <div class="margins">
+  
+      <label for="role">Role</label><br>
+      <select name="role" class="margins" [(ngModel)]="role">
+        <option name="admin" id="admin">Admin</option>
+        <option name="stff" id="staff">Staff</option>
+      </select>
+        
+      </div>
+  
+      <button class="margins btn" type="submit" (click)="staffAdd()">Add Staff!</button>
+
+</form>
+</div>

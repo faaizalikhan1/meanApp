@@ -1,0 +1,18 @@
+
+<div class="ticketList">
+  <table>
+    <th>Event Name</th>
+    <th>Title</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    
+    <tr *ngFor="let d of li; let i = index">
+      <td>{{d.eventName}}</td>
+      <td>{{d.title}}</td>
+      <td>{{d.qty}}</td>
+      <td>{{d.price}}</td>
+      <td class="delete"><a (click)="del(d.eventName)"> delete</a></td>
+  
+    </tr>
+  </table>
+  </div>

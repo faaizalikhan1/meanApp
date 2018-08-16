@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5em;
+    color:#17bebb;
+}
+
+nav div{
+    height: calc(15em/3);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+nav div fa-icon{
+    margin-bottom: 1.5em;
+}
+
+a{
+    margin-bottom: 1.1em;
+    transition: 0.2s all ease-in;
+    color:rgb(226, 223, 223);
+}
+
+a:hover{
+    transition: 0.2s all ease-out;
+    color: lightseagreen;
+}
+

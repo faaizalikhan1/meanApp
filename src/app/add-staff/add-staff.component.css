@@ -1,0 +1,53 @@
+
+.form{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  width: 15%;
+}
+input{
+  margin-top: 0.8em;
+  background:transparent;
+  width: 100%;
+  display: block;
+  border: none;
+  color:#afdedc;
+}
+
+label{
+  color: rgb(226, 223, 223);
+}
+
+input:focus{
+  transition: 0.5s all ease;
+  border-bottom: 2px solid #21fa90;
+  outline: none;
+
+}
+
+input:valid{
+border-bottom: 2px solid #1cb46a;
+}
+
+input:invalid{
+border-bottom: 2px solid red;
+}
+
+.margins{
+  margin-top: 1em;
+}
+
+
+.btn{
+  border:2px solid rgb(51, 52, 53);
+  border-radius: 2px;
+  text-align: center;
+  background:rgb(51, 52, 53);
+  cursor: pointer;
+  height: 3em;
+  width: 40%;
+}

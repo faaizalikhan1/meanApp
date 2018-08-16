@@ -1,0 +1,42 @@
+<div class="form">
+
+    <form action="#" method="post">
+            
+          <label for="eventName"><b>Event Name</b></label>
+              <select name="eventName">
+                 <option value="Select one" [(ngModel)]="eventName" *ngFor="let e of x">{{e[i].eventName}}</option>
+              </select><br>
+            
+
+        <div class="margins">
+          <label for="ticketTitle"><b> Title</b></label>
+          <input type="text" [(ngModel)]="ticketTitle" name="ticketTitle" style="width:40%;" required>
+        </div>
+          
+          <table class="margins">
+                  <th></th>
+                  <th style="text-decoration: underline black; font-size: 1.1em">Type</th>
+                  <th style="text-decoration: underline black; font-size: 1.1em">Amount</th>
+                  <th style="text-decoration: underline black; font-size: 1.1em">Price</th>
+
+              <tr>
+                  <th rowspan="2" style="font-size:1.5em; font-weight: bold;">Tickets</th>
+                  <th>Adult</th>
+                  <td><input type="text" [(ngModel)]="ticket.adult" name="adult" required></td>
+                  <td><p>{{ adultPrice }}</p></td>
+              </tr>
+              <tr>
+                  <th>Child</th>
+                  <td><input type="text" [(ngModel)]="ticket.child" name="child" required></td>
+                  <td><p>{{ childPrice }}</p></td>
+              </tr>
+           
+              </table><br>
+
+              <div><p> Ticket Price:{{ sum  }}</p></div>
+          
+      
+          <button class="btn" (click)="addTicket()" type="submit">Add Ticket!!</button>
+        </form>
+
+</div>
